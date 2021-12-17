@@ -80,3 +80,21 @@ character.totalSeasons = 1 + 2 + 3 + 2;
 // - Access the value of the key `totalSeason` (it should be 8)
 
 console.log(character.totalSeasons);
+
+
+let keyValue = 'username';
+let charactor = {
+  username: 'arya',
+};
+
+// [] bracket notation.
+// 1.
+console.log(charactor['keyValue']);
+// 2.
+console.log(charactor[keyValue]);
+
+// dot notation
+// 1.
+
+console.log(charactor.keyValue);
+
