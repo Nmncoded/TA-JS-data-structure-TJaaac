@@ -204,3 +204,15 @@ console.log(allGenres.length)
 for(let genre of allGenres){
   console.log(genre)
 }
+
+// 32.
+let allActors = [];
+for(let movie of movies){
+  for(let actor of movie.actors){
+    allActors.push(actor);
+  }
+}
+console.log(allActors.length)
+for(let actor of allActors){
+  console.log(actor)
+}
