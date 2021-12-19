@@ -93,13 +93,47 @@ for(let strings of movies[0].genres){
 }
 // 19. Log all the genres of the second movie one by one
 
+let secondallGenres = "";
+for(let i=0; i < movies[1].genres.length; i++){
+    secondallGenres = movies[1].genres[i]
+  console.log(secondallGenres);
+}
+for(let strings of movies[1].genres){
+  console.log(strings);
+}
+
 // 20. Log if the first actor of the first movie is `Rachel McAdams` or not (You have to log true or false)
+
+if(movies[0].actors[0] === 'Rachel McAdams' ){
+  console.log(true);
+}else{
+  console.log(false);
+}
 
 // 21. Log if the second actor (index 1) of the second movie is `Natalie Portman` or not (You have to log true or false)
 
+if(movies[1].actors[1] === 'Natalie Portman' ){
+  console.log(true);
+}else{
+  console.log(false);
+}
+
 // 22. Log if the year of all three movies is greater than `2017` or not one by one. (Log true or false)
 
+let yearNumber = 0;
+for(let i=0; i < movies[movies.length]; i++){
+  yearNumber = Number(movies[i].year);
+  if(yearNumber > 2017){
+    console.log(true)
+  }else{
+    console.log(false)
+  }
+}
+
 // 23. Log the title of all three movies one by one.
+for(let i=0; i<movies[movies.length]; i++){
+  console.log(movies[i].title);
+}
 
 // 24. Log if the title of the first movie is `Hannah` or not
 
