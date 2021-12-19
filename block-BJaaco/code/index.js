@@ -4,9 +4,30 @@ let userIds = [1230, 234, 1278, 984, 763, 900];
 
 // 1. Add all the values of numbers and userIds array into the new newly created array named `collection`
 
+let collection = [];
+for(let number of numbers){
+  collection.push(number);
+}
+for(let id of userIds){
+  collection.push(id);
+}
 // 2. Add all the even numbers from both arrays numbers and userIds into a newly created array named `evenCollection`
 
+let evenCollection = [];
+for(let value of collection){
+  if(value%2===0){
+    evenCollection.push(value)
+  }
+}
+
 // 3. Add all the odd numbers from both arrays numbers and userIds into a newly created array named `oddCollection`
+
+let oddCollection = [];
+for(let value of collection){
+  if(value%2!==0){
+    oddCollection.push(value)
+  }
+}
 
 /*
   @param means parameter
@@ -23,14 +44,17 @@ let userIds = [1230, 234, 1278, 984, 763, 900];
     times(0); // []
     times(5); // ['test', 'test', 'test', 'test', 'test']
 */
-
-function times() {
-  // Your code
+let array = [];
+function times(number, string='test') {
+  for(let i = number; i>0; i--){
+    array.push(string);
+  }
+  return array;
 }
 
 // Uncomment the code below and test the output
 
-// console.log(times(5, 'c')); // ['c', 'c', 'c', 'c', 'c']
+// console.log(times(5, 'c'));   // ['c', 'c', 'c', 'c', 'c']
 // console.log(times(2, 'a')); // ['a', 'a']
 // console.log(times(0)); // []
 // console.log(times(5)); // ['test', 'test', 'test', 'test', 'test']
@@ -48,8 +72,8 @@ function times() {
     revert(['Ryan', 'John', 'Bran']); //['Bran', 'John', 'Ryan']
 */
 
-function revert() {
-  // your code
+function revert(array) {
+  
 }
 
 // Uncomment the code below and test the output
