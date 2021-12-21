@@ -118,7 +118,7 @@ console.log(arrAllPeople);
 
 // 17. Log the value and length of `allPeople` array created above
 
-
+console.log(arrAllPeople, arrAllPeople.length);
 
 // 18. Push all descriptions into an array named `allDescription`
 
@@ -131,7 +131,11 @@ for(let house of got.houses){
 console.log(arrallDescription);
 
 // 19. Log the value and length `allDescription`
-
+console.log(arrallDescription, arrallDescription.length);
 // 20. Only the the description whose length is more than 30. (use .length property on string to get the length)
-
+for(let description of arrallDescription){
+  if(description.length > 30){
+    console.log(description);
+  }
+}
 
