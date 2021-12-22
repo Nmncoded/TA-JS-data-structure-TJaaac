@@ -103,7 +103,9 @@ let blogs = [
   },
 ];
 
-// Your code goes here
+let clonedBlogs = [
+  ...blogs, ...blogs[0], ...blogs[1], ...blogs[2],
+];
 ```
 
 5. Clone the `question` variable into a new variable named `questionClone`
